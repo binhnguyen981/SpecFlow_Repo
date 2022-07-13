@@ -17,6 +17,9 @@ namespace TurnupPortal.Pages
 			// github branch
 			IWebElement nameTextbox = driver.FindElement(By.Id("Name"));
 
+			//github mybranchname
+			IWebElement usernameTextbox = driver.FindElement(By.Id("Username"));
+
 			Thread.Sleep(1000);
 			//Click button Create
 
@@ -28,7 +31,7 @@ namespace TurnupPortal.Pages
 			nameTextbox.SendKeys("John Lennon");
 
 			//Send text to username textbox
-			IWebElement usernameTextbox = driver.FindElement(By.Id("Username"));
+
 			usernameTextbox.SendKeys("johnlennon");
 
 			//Send text to Contact textbox
