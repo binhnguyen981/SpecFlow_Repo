@@ -13,6 +13,9 @@ namespace TurnupPortal.Pages
 		{
 			IWebElement buttonCreate = driver.FindElement(By.LinkText("Create"));
 			IWebElement contactTextbox = driver.FindElement(By.Id("EditContactButton"));
+			
+			//github3
+			IWebElement firstName = driver.FindElement(By.Id("FirstName"));
 
 			// github branch
 			IWebElement nameTextbox = driver.FindElement(By.Id("Name"));
@@ -42,7 +45,6 @@ namespace TurnupPortal.Pages
 			driver.SwitchTo().Frame(0);
 			
 			//Input contact
-			IWebElement firstName = driver.FindElement(By.Id("FirstName"));
 			firstName.SendKeys("John");
 			
 			IWebElement lastName = driver.FindElement(By.Id("LastName"));
